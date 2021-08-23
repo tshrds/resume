@@ -117,7 +117,7 @@ function App() {
                                     <div className="_1C8rA">
                                        <div className="_1FYIv">
                                           <div className="_2LiuL">
-                                             <div className="_3WPZR">5</div>
+                                             <div className="_3WPZR">6.2</div>
                                           </div>
                                           <div className="ZUgdC">6.2</div>
                                           <div className="_20Hj0"><span>years of professional experience</span></div>
