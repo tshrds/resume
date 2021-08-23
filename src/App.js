@@ -1,5 +1,3 @@
-import Background from './img/background.jpg';
-
 function App() {
     return ( 
       <div id="root">
