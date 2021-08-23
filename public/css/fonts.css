@@ -1,0 +1,8 @@
+@font-face {
+    font-display: block;
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/public/css/fonts/HKGrotesk-Light.eot');
+    src: url('/public/css/fonts/HKGrotesk-Light.eot#iefix') format('embedded-opentype'), url('/public/css/fonts/HKGrotesk-Light.woff2') format('woff2'), url('/public/css/fonts/HKGrotesk-Light.woff') format('woff')
+}
