@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar Das | Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .sidebar-item {
+            border-left: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar-item:hover {
+            background: #f1f5f9;
+            border-left-color: #3b82f6;
+        }
+
+        @media print {
+            .no-print { display: none; }
+            body { background: white; }
+            .section-card { box-shadow: none; border: 1px solid #e2e8f0; }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="max-w-6xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- Sidebar / Left Column -->
+            <div class="lg:col-span-4 space-y-6">
+                <!-- Profile Section -->
+                <div class="section-card p-6 text-center lg:text-left">
+                    
+                    <h1 class="text-3xl font-bold text-slate-900 mb-1">Tushar Das</h1>
+                    <p class="text-blue-600 font-semibold mb-4">Java Lead</p>
+                    
+                    <div class="space-y-3 text-sm text-slate-600">
+                        <div class="flex items-center justify-center lg:justify-start gap-3">
+                            <i class="fa-solid fa-location-dot text-blue-500 w-4"></i>
+                            <span>Bengaluru, India</span>
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-start gap-3">
+                            <i class="fa-solid fa-envelope text-blue-500 w-4"></i>
+                            <a href="mailto:tushar.das@outlook.in" class="hover:text-blue-600">tushar.das@outlook.in</a>
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-start gap-3">
+                            <i class="fa-solid fa-phone text-blue-500 w-4"></i>
+                            <span>+91-7209748142</span>
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-start gap-3">
+                            <i class="fa-brands fa-linkedin text-blue-500 w-4"></i>
+                            <a href="https://linkedin.com/in/tshrds" target="_blank" class="hover:text-blue-600">linkedin.com/in/tshrds</a>
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-start gap-3">
+                            <i class="fa-solid fa-globe text-blue-500 w-4"></i>
+                            <a href="https://profile.wandererdroid.in" target="_blank" class="hover:text-blue-600">profile.wandererdroid.in</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="section-card p-6">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-bolt text-yellow-500"></i> Expert Skills
+                    </h2>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Architecture</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded">Microservices</span>
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded">Event-Driven</span>
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded">DDD / Clean Architecture</span>
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded">System Design (HLD/LLD)</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Backend & Java</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs font-medium rounded">Java 17+</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs font-medium rounded">Spring Boot 3</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs font-medium rounded">Spring Cloud</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs font-medium rounded">Hibernate/JPA</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs font-medium rounded">RESTful APIs</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Cloud & DevOps</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-orange-50 text-orange-700 text-xs font-medium rounded">AWS (EKS, Lambda, S3)</span>
+                                <span class="px-2 py-1 bg-orange-50 text-orange-700 text-xs font-medium rounded">Docker & K8s</span>
+                                <span class="px-2 py-1 bg-orange-50 text-orange-700 text-xs font-medium rounded">Jenkins CI/CD</span>
+                                <span class="px-2 py-1 bg-orange-50 text-orange-700 text-xs font-medium rounded">Helm Charts</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Generative AI</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs font-medium rounded">LLM Integration</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs font-medium rounded">Vector DBs</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs font-medium rounded">Prompt Engineering</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs font-medium rounded">GitHub Copilot</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="section-card p-6">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2">Education</h2>
+                    <div>
+                        <p class="font-bold text-slate-800">B.Tech in CS & Technology</p>
+                        <p class="text-sm text-slate-600">West Bengal Univ. of Technology</p>
+                        <p class="text-xs text-slate-400 mt-1">2011 - 2015</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content / Right Column -->
+            <div class="lg:col-span-8 space-y-6">
+                
+                <!-- About Me -->
+                <div class="section-card p-8">
+                    <h2 class="text-2xl font-bold mb-4 gradient-text">Professional Profile</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Design-minded <strong>Senior Developer</strong> with over <strong>10+ years of experience</strong> specializing in high-performance back-end ecosystems. Expert in architecting scalable distributed systems using <strong>Java/Spring Boot</strong> and <strong>Cloud-native patterns (AWS)</strong>. Proven track record in leading digital transformation across BFSI, Healthcare, and Pharmaceuticals. Currently focusing on the intersection of <strong>Enterprise Architecture and Generative AI</strong>, building AI-enabled services that drive business value.
+                    </p>
+                </div>
+
+                <!-- Experience -->
+                <div class="section-card p-8">
+                    <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                        <i class="fa-solid fa-briefcase text-slate-400"></i> Work Experience
+                    </h2>
+
+                    <div class="space-y-12">
+                        <!-- Current Role -->
+                        <div class="relative pl-8 border-l-2 border-blue-200">
+                            <div class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full"></div>
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-slate-900">Senior Java Fullstack Developer (Architect Track)</h3>
+                                    <p class="text-blue-600 font-medium">BayOne Techno Advisors | Client: Albertsons Companies, Inc.</p>
+                                </div>
+                                <span class="text-sm font-bold bg-slate-100 px-3 py-1 rounded-full text-slate-500 mt-2 md:mt-0">Oct 2024 - Present</span>
+                            </div>
+                            <ul class="mt-4 space-y-3 text-slate-600 text-sm list-disc ml-4">
+                                <li><strong>GenAI Implementation:</strong> Leading the design of a state-of-the-art personalized shopping platform utilizing <strong>Deep Learning and LLM-based product recommendation engines</strong>.</li>
+                                <li><strong>High-Performance Architecture:</strong> Defined HLD/LLD for microservices managing complex consumer flows, integrating <strong>Spring Boot and FastAPI (Python)</strong> to reduce latency by 40%.</li>
+                                <li><strong>Observability:</strong> Architected system monitoring using <strong>Prometheus & Grafana</strong> to ensure high availability and resiliency.</li>
+                                <li><strong>Security & Governance:</strong> Enforcing zero-trust security principles and managing <strong>Snyk</strong> vulnerability remediation.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Previous Role 1 -->
+                        <div class="relative pl-8 border-l-2 border-blue-200">
+                            <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-300 rounded-full"></div>
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-slate-900">Product Development Engineer II</h3>
+                                    <p class="text-blue-600 font-medium">Calibo India Pvt Ltd | Project: LAZSA Platform (PPaaS)</p>
+                                </div>
+                                <span class="text-sm font-bold bg-slate-100 px-3 py-1 rounded-full text-slate-500 mt-2 md:mt-0">Apr 2021 - Oct 2024</span>
+                            </div>
+                            <ul class="mt-4 space-y-3 text-slate-600 text-sm list-disc ml-4">
+                                <li><strong>AWS Architecture:</strong> Designed and deployed resilient cloud-native solutions using <strong>EKS Clusters, S3, and Kinesis</strong>.</li>
+                                <li><strong>Distributed Systems:</strong> Architected data pipelines with <strong>Kafka and Snowflake</strong>, implementing NIFI integrations for diverse high-volume templates.</li>
+                                <li><strong>Technical Governance:</strong> Mentored senior engineers in implementing Clean Architecture and SOLID principles, driving code review standards.</li>
+                                <li><strong>DevOps Excellence:</strong> Implemented end-to-end CI/CD pipelines via Jenkins, automating microservice deployments on AWS.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Previous Role 2 -->
+                        <div class="relative pl-8 border-l-2 border-blue-200">
+                            <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-300 rounded-full"></div>
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-slate-900">Senior Engineer</h3>
+                                    <p class="text-blue-600 font-medium">Altimetrik India Pvt Ltd</p>
+                                </div>
+                                <span class="text-sm font-bold bg-slate-100 px-3 py-1 rounded-full text-slate-500 mt-2 md:mt-0">July 2015 - Mar 2021</span>
+                            </div>
+                            <p class="text-xs text-slate-500 font-bold mt-2 uppercase tracking-tight">Key Projects: BDP Platform, AltiFin-Paysa (BFSI)</p>
+                            <ul class="mt-3 space-y-3 text-slate-600 text-sm list-disc ml-4">
+                                <li><strong>Scalable Backend:</strong> Built robust Spring Boot microservices integrated with <strong>Neo4j Graph DB</strong> for low-code productivity tools.</li>
+                                <li><strong>Financial Systems:</strong> Led the development of a high-security BFSI remittance app, integrating Axis Bank & RBL APIs for high-throughput fund transfers.</li>
+                                <li><strong>Cloud Workspace:</strong> Provisioned scalable developer environments using <strong>AWS Workspaces</strong>, improving team productivity by 30%.</li>
+                                <li><strong>API Design:</strong> Crafted secure RESTful interfaces using OAuth2/JWT for cross-domain services.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements & Awards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="section-card p-6">
+                        <h2 class="text-lg font-bold mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-trophy text-yellow-500"></i> Recognition
+                        </h2>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-500">•</span>
+                                <span><strong>Customer Focus Champion</strong> Award at BayOne (Albertsons)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-500">•</span>
+                                <span><strong>Gem Award</strong> for outstanding platform contribution at Calibo</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-500">•</span>
+                                <span>Multiple <strong>Inspire & Integrity</strong> Awards at Altimetrik</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section-card p-6">
+                        <h2 class="text-lg font-bold mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-earth-americas text-blue-500"></i> Highlights
+                        </h2>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-500">•</span>
+                                <span><strong>International:</strong> Visited Uruguay for strategy meets & peer-programming</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-500">•</span>
+                                <span><strong>Innovation:</strong> Winner of College Hackathon for Organ Donation App</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-500">•</span>
+                                <span><strong>Tech-Savvy:</strong> Early adopter of AI tools (GitHub Copilot) for architecture</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-12 text-center text-slate-400 text-sm no-print">
+            <p>© 2026 Tushar Das — Professional Resume</p>
+            <button onclick="window.print()" class="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors">
+                <i class="fa-solid fa-print"></i> Download as PDF
+            </button>
+        </footer>
+    </div>
+
+</body>
+</html>
