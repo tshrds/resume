@@ -2,20 +2,38 @@
   "name": "tushar-das-resume",
   "version": "1.0.0",
   "description": "Tushar Das - Software Engineer Resume",
-  "main": "index.html",
-  "scripts": {
-    "start": "http-server -p 8080 -o",
-    "dev": "http-server -p 8080 -c-1",
-    "build": "echo 'This is a static site, no build needed'"
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
   },
-  "keywords": [
-    "resume",
-    "portfolio",
-    "software-engineer"
-  ],
-  "author": "Tushar Das",
-  "license": "MIT",
+  "scripts": {
+    "start": "PORT=8099 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "tailwindcss": "^3.3.0",
+    "postcss": "^8.4.24",
+    "autoprefixer": "^10.4.14"
   }
 }

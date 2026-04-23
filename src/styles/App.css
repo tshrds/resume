@@ -14,8 +14,6 @@ html.dark body {
     background: white;
     border-radius: 12px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    margin-bottom: 1.5rem;
-    padding: 2rem;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -40,7 +38,28 @@ html.dark .skill-tag {
     background-color: #334155;
 }
 
-/* Preserve expertise section colors in dark mode */
+/* Light mode expertise section colors */
+.skill-tag.text-blue-700 {
+    color: #1e40af;
+}
+
+.skill-tag.text-green-700 {
+    color: #15803d;
+}
+
+.skill-tag.text-orange-700 {
+    color: #b45309;
+}
+
+.skill-tag.text-purple-700 {
+    color: #6b21a8;
+}
+
+.skill-tag.text-slate-700 {
+    color: #334155;
+}
+
+/* Dark mode expertise section colors */
 html.dark .skill-tag.text-blue-700 {
     color: #60a5fa;
 }

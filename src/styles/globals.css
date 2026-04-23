@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark body {
+    background-color: #0f172a;
+    color: #f1f5f9;
+}
+
+.section-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark .section-card {
+    background: #1e293b;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.skill-tag {
+    background-color: #f1f5f9;
+    color: #475569;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0.25rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark .skill-tag {
+    background-color: #334155;
+}
+
+.experience-border {
+    border-left: 2px solid #e2e8f0;
+    padding-left: 1.5rem;
+    position: relative;
+    transition: border-color 0.3s ease;
+}
+
+html.dark .experience-border {
+    border-left-color: #334155;
+}
+
+.experience-border::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #3b82f6;
+}
+
+/* Dark mode text overrides */
+html.dark .text-slate-900 { color: #f1f5f9; }
+html.dark .text-slate-600 { color: #cbd5e1; }
+html.dark .text-slate-500 { color: #94a3b8; }
+html.dark .text-slate-400 { color: #64748b; }
+html.dark .text-slate-700 { color: #e2e8f0; }
+html.dark .text-slate-800 { color: #e2e8f0; }
+
+@media print {
+    #darkModeToggle { display: none !important; }
+    .no-print { display: none; }
+}
