@@ -1,4 +1,5 @@
 import React from 'react';
+import DOMPurify from 'dompurify';
 
 const Experience = () => {
   return (
@@ -16,11 +17,11 @@ const Experience = () => {
           client="Albertsons Companies, Inc."
           description="State-of-the-art platform catering to individual needs through Deep Learning to provide a personalized shopping experience."
           achievements={[
-            "Developed a <strong>dynamic configuration engine</strong> that leverages RESTful APIs to deliver real-time personalized product recommendations based on historical consumer data, enhancing user engagement.",
-            "Leading <strong>System Design</strong> for low-latency REST endpoints to serve personalized content flows.",
-            "Designed and developed <strong>model-serving APIs</strong> using <strong>Spring and FastAPI</strong> microservices to optimize <strong>distributed system</strong> response times.",
-            "Enabled <strong>A/B experimentation</strong> via configuration-driven platform supporting dynamic model strategies, segmentation, and campaign execution.",
-            "Introduced <strong>Prometheus</strong> configurations to track performance metrics, visualized through <strong>Grafana</strong> dashboards."
+            "Developed a <b>dynamic configuration engine</b> that leverages RESTful APIs to deliver real-time personalized product recommendations based on historical consumer data, enhancing user engagement.",
+            "Leading <b>System Design</b> for low-latency REST endpoints to serve personalized content flows.",
+            "Designed and developed <b>model-serving APIs</b> using <b>Spring and FastAPI</b> microservices to optimize <b>distributed system</b> response times.",
+            "Enabled <b>A/B experimentation</b> via configuration-driven platform supporting dynamic model strategies, segmentation, and campaign execution.",
+            "Introduced <b>Prometheus</b> configurations to track performance metrics, visualized through <b>Grafana</b> dashboards."
           ]}
         />
 
@@ -31,11 +32,11 @@ const Experience = () => {
           project="LAZSA Platform (PPaaS Architecture)"
           description="Orchestrating data-innovation journeys through unified digital solutions."
           achievements={[
-            "Engineered robust <strong>NiFi Data Pipelines</strong> for real-time Kafka, Snowflake, Hadoop, and MySQL integrations.",
-            "Containerized <strong>Metabase</strong> and <strong>Open-Refine</strong> using Docker for scalable visualization and data transformation.",
-            "Implemented <strong>AWS S3</strong> integration using SDK and high-impact analytics using <strong>Qlik-Sense</strong>.",
-            "Developed <strong>Python</strong> wheel packages and notebook templates for Databricks and Kinesis Stream processing.",
-            "Enhanced application security posture by neutralizing high-risk vulnerabilities via automated <strong>Snyk</strong> audits."
+            "Engineered robust <b>NiFi Data Pipelines</b> for real-time Kafka, Snowflake, Hadoop, and MySQL integrations.",
+            "Containerized <b>Metabase</b> and <b>Open-Refine</b> using Docker for scalable visualization and data transformation.",
+            "Implemented <b>AWS S3</b> integration using SDK and high-impact analytics using <b>Qlik-Sense</b>.",
+            "Developed <b>Python</b> wheel packages and notebook templates for Databricks and Kinesis Stream processing.",
+            "Enhanced application security posture by neutralizing high-risk vulnerabilities via automated <b>Snyk</b> audits."
           ]}
         />
 
@@ -103,7 +104,7 @@ const ExperienceItem = ({ title, company, period, client, project, description, 
       <p className="text-xs text-slate-500 italic mb-3">{description}</p>
       <ul className="list-disc list-outside ml-4 text-sm text-slate-600 space-y-2">
         {achievements.map((achievement, idx) => (
-          <li key={idx} dangerouslySetInnerHTML={{ __html: achievement.replace(/<strong>(.*?)<\/strong>/g, '<b>$1</b>') }} />
+          <li key={idx} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(achievement) }} />
         ))}
       </ul>
     </div>
@@ -116,7 +117,7 @@ const SubProject = ({ title, description, achievements }) => (
     <p className="text-xs text-slate-500 mb-2 italic">{description}</p>
     <ul className="list-disc list-outside ml-4 text-sm text-slate-600 space-y-1">
       {achievements.map((achievement, idx) => (
-        <li key={idx}>{achievement}</li>
+        <li key={idx} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(achievement) }} />
       ))}
     </ul>
   </div>
